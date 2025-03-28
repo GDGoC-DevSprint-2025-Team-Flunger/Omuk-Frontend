@@ -1,7 +1,10 @@
-'use client'
+// App.tsx
+'use client';
 import React,{ useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+import "./recipe_page.css";
+import { FaYoutube } from "react-icons/fa";
 
 const App: React.FC = () => {
 
@@ -35,8 +38,10 @@ const toggleModal = () => {
           </div>
 
           {/* 영상 링크 및 즐겨찾기 버튼 */}
-          <div className="buttons ">
-            <button className="btn-youtube mr-2"></button>
+          <div className="buttons "> {/*window.open 옆에 영상 링크 달기*/}
+            <button className="btn-youtube mr-2" onClick={() => window.open("https://youtu.be/CLjMjdBxY-o?feature=shared", "_blank")}>
+            <FaYoutube className="youtube-icon" size={40} />
+            </button>
             {/* 즐겨찾기 버튼 (별 아이콘) */}
             <button className="btn-favorite" onClick={toggleFavorite}>
               <FontAwesomeIcon
@@ -45,9 +50,10 @@ const toggleModal = () => {
               />
             </button>
           </div>
+
           {/* 소요 시간 */}
           <div className="time">
-            <h3><strong>소요 시간: 30분 </strong></h3>
+            <h5><strong>소요 시간: 30분 </strong></h5>
           </div>
 
           {/* 난이도 */}
@@ -61,13 +67,13 @@ const toggleModal = () => {
             <button className ="btn-modal" onClick={toggleModal}>?</button>
 
             {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <h3>식사 유형 정보</h3>
-          <p>식사 유형에 대한 추가 정보가 여기에 표시됩니다.</p>
-        </div>
-      </div>
-      )}
+            <div className="modal">
+              <div className="modal-content">
+                <h3>식사 유형 정보</h3>
+                <p>식사 유형에 대한 추가 정보가 여기에 표시됩니다.</p>
+              </div>
+            </div>
+            )}
           </div>
 
           {/* ✅ 팁 추가 */}
@@ -99,6 +105,10 @@ const toggleModal = () => {
                 <td>200g</td>
               </tr>
               <tr>
+                <td>물</td>
+                <td>300ml</td>
+              </tr>
+              <tr>
                 <td>간장</td>
                 <td>2큰술</td>
               </tr>
@@ -114,10 +124,41 @@ const toggleModal = () => {
                 <td>참기름</td>
                 <td>1작은술</td>
               </tr>
+              <tr>
+                <td>소금</td>
+                <td>약간</td>
+              </tr>
             </tbody>
           </table>
+          <h2 className="table-title">📝 조리 과정</h2>
+          <div className="cooking-process">
+            <div className="step">
+              <div className="step-description">
+                <strong>1. 번데기 준비</strong>
+                <p>번데기를 깨끗이 씻은 후 끓는 물에 데친다.</p>
+              </div>
+              <div className="step-image">
+                <img src="/images/boiling_water.jpg" alt="Step 1" />
+              </div>
+            </div>
+
+            <div className="step">
+        <div className="step-description">
+          <strong>2. 양념 만들기</strong>
+          <p>간장, 설탕, 마늘, 참기름을 섞어 양념을 만든다.</p>
         </div>
-      </div>
+        <div className="step-image">
+          <img src="/images/sauce.jpg" alt="Step 2" />
+          </div>
+        </div>
+    
+          </div> {/*cooking-process 감싸는 div */}
+          
+
+        </div>
+
+
+      </div> {/*전체 감싸는 div */}
     </div>
 
 

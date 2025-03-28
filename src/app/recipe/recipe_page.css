@@ -1,0 +1,254 @@
+/* App.css */
+.App {
+    display: flex;
+    min-height: 100vh; /* 화면 전체 높이 */
+}
+  
+.flex {
+    display: flex;
+    width: 100%; /* 부모의 100% 너비를 차지 */
+}
+  
+.flex-35 {
+    flex: 0 0 35%; /* 25% 너비 */
+    padding: 20px; /* 콘텐츠의 여백을 설정 */
+    box-sizing: border-box; /* 패딩을 포함하여 크기 계산 */
+    display: flex;
+    background-color: #ebeaeaf1;
+    margin-right: 3vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* 모든 콘텐츠를 가운데 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+  
+  
+.p-4 {
+    padding: 16px;
+}
+  
+.h2 {
+    font-size: 1.5rem; /* 음식 이름 크기 */
+    font-weight: bold;
+    margin-bottom: 10px; /* 음식 이름과 사진 사이의 간격 */
+}
+  
+.food-image {
+    width: 80%; /* 부모의 너비에 맞게 크기 조정 */
+    max-width: 80%; /* 최대 너비를 100%로 설정 */
+    height: auto;
+    margin-bottom: 10px; /* 음식 이름과 이미지 사이의 간격 */
+}
+  
+.food-image img {
+    width: 80%; /* 부모의 너비에 맞게 비율에 맞춰 이미지 크기 조정 */
+    height: 80%;
+    object-fit: cover; /* 이미지 비율을 유지하며 크기 조정 */
+    border-radius: 0.5rem; /* 둥근 모서리 */
+}
+  
+.buttons {
+    display: flex;
+    gap: 50px;  /* 버튼 간의 간격 */
+    margin-top: 1vh; /* 이미지와 버튼 사이의 간격 */
+}
+  
+  /* 버튼 스타일 */
+  .btn-youtube {
+    width: 50px; /* 버튼 크기 */
+    height: 50px; /* 버튼 높이 */
+    border-radius: 0.5rem; /* 둥근 모서리 */
+    background-color: #fcfcfc; /* 유튜브 빨간색 */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px; /* 로고 크기 */
+}
+  
+
+.youtube-icon {
+    color: #de3323; /* 유튜브 아이콘 색상*/
+}
+  
+  /* 즐겨찾기 버튼 */
+.btn-favorite {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+  
+  /* 빈 별 (기본 상태) */
+.favorite-icon {
+    color: #ffffffee; /* 회색 빈 별 */
+}
+  
+  /* 클릭 시 노란색 별 */
+.favorite-icon.filled {
+    color: #ffd83d; /* 노란색 별 */
+}
+  
+  
+.time {
+    font-size: 1.1rem; /* 소요 시간 크기 */
+    margin-top: 60px; /* 소요 시간과 버튼 사이 간격 */
+}
+  
+  /* 식사 유형 버튼 */
+.type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+  
+    margin-bottom: 30px;
+}
+  
+.btn-modal {
+    background-color: #010901;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+  /* 모달 팝업 */
+.modal {
+    position: absolute; /* 부모 요소 기준으로 배치 */
+    top: 40px; /* 버튼 아래쪽으로 내림 */
+    left: 50%; /* 버튼 중앙 정렬 */
+    transform: translateX(-50%); /* 가로 중앙 정렬 */
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgb(62, 58, 58);
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* 모달 너비 조정 */
+    height: 150px; /* 모달 높이 조정 */
+
+}
+  
+.modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px; 
+    pointer-events: all; /* 모달 내부만 클릭 가능 */
+    border: none;
+}
+  
+  /* ✅ 팁 스타일 */
+.tip {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+.tip strong {
+    color: #e67e22; /* 주황색 강조 */
+    font-size: 1.4rem;
+}
+  
+.tip p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+  
+
+
+
+
+
+
+.flex-65 {
+    flex: 0 0 65%; /* 75% 너비 */
+    padding: 20px;
+    background-color: #ebeaeaf1;
+    margin-top: 0; /* 위쪽 여백 제거 */
+}
+  
+.table-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+  
+.ingredient-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+  
+.ingredient-table th, .ingredient-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+  
+.ingredient-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.ingredient-table tr {
+    background-color: #f9f9f9;
+}
+
+
+
+/* 조리 과정 섹션 */
+
+.table-title {
+    margin-top: 100px; /* 간격을 주기 위해 상단 여백 추가 */
+}
+
+.cooking-process {
+    margin-top: 30px; /* 간격을 주기 위해 상단 여백 추가 */
+}
+
+/* 각 과정 (설명과 사진을 담은 컨테이너) */
+.step {
+    display: flex;
+    justify-content: space-between; /* 설명과 사진을 양쪽에 배치 */
+    align-items: center;
+    margin-bottom: 20px; /* 각 항목 사이 간격 */
+    border-bottom: 1px solid #ddd; /* 항목 간 구분선 */
+    padding-bottom: 20px; /* 하단 패딩 */
+    background-color: #1193aa;
+    border-radius: 0.5rem;
+    padding: 10px;
+    height: 30vh;
+}
+
+/* 설명 부분 스타일 */
+.step-description {
+    flex: 1; /* 설명을 왼쪽에 배치 */
+    padding-right: 20px; /* 설명과 사진 간격 조정 */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* 글자 색상 */
+}
+
+/* 이미지 부분 스타일 */
+.step-image img {
+    width: 200px; /* 이미지 크기 조정 */
+    height: 200px;
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+/* 각 항목이 끝난 후 여백을 주기 위한 스타일 */
+.step:last-child {
+    margin-bottom: 0;
+}
