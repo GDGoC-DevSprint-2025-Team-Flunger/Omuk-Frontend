@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/app/_not-found/page-d488f7aec3f4ffd7.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/css/b3cbcd051438d1d5.css",
+      "static/css/d3df112486f97f47.css",
+      "static/css/a8262b8a6dbc1b80.css",
+      "static/chunks/9c4e2130-c5edf13bedfe27d1.js",
+      "static/chunks/8e1d74a4-98d5a7d540bb92c7.js",
+      "static/chunks/c916193b-1c9cfd62e006a304.js",
+      "static/chunks/app/layout-65b1358bd7f2d3cf.js"
+    ],
+    "/register/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/app/register/page-dc3000949e7b11a2.js"
+    ],
+    "/fridge/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/app/fridge/page-6308df77db948db0.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/app/page-405cba3b4b77c7e4.js"
+    ],
+    "/personal/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/app/personal/page-74799e07ceb36ab8.js"
+    ],
+    "/recipe/page": [
+      "static/chunks/webpack-0ecaacdd48b166db.js",
+      "static/chunks/4bd1b696-f6a08746561b241a.js",
+      "static/chunks/517-b70844aa2bc05871.js",
+      "static/chunks/main-app-7e88727d32e53dee.js",
+      "static/chunks/870fdd6f-418cdccded5518d0.js",
+      "static/chunks/757-8baeb3aea31e97be.js",
+      "static/chunks/app/recipe/page-e9ab1e041ca08680.js"
+    ]
+  }
+}
