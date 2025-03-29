@@ -14,6 +14,22 @@ const Home: React.FC = () => {
 
             {/* 본문 콘텐츠 부분 */}
             <main>
+            <Link
+        href="/recipe"
+        style={{
+          padding: '10px',
+          marginRight: '10px',
+          backgroundColor: '#007bff',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+      </Link>
                 {/* 버튼 섹션 수정 */}
             </main>
         </div>

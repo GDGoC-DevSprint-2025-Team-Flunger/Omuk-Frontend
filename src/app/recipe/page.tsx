@@ -69,8 +69,29 @@ const toggleModal = () => {
             {isModalOpen && (
             <div className="modal">
               <div className="modal-content">
-                <h3>식사 유형 정보</h3>
-                <p>식사 유형에 대한 추가 정보가 여기에 표시됩니다.</p>
+              <h3>식사 유형 정보</h3>
+      <table className="modal-table">
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>정보</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>맛 종류</strong></td>
+            <td>짭짤하고 고소한 맛</td>
+          </tr>
+          <tr>
+            <td><strong>식사 종류</strong></td>
+            <td>간식, 안주</td>
+          </tr>
+          <tr>
+            <td><strong>알레르기 성분</strong></td>
+            <td>갑각류, 콩</td>
+          </tr>
+        </tbody>
+      </table>
               </div>
             </div>
             )}
@@ -130,6 +151,11 @@ const toggleModal = () => {
               </tr>
             </tbody>
           </table>
+
+
+
+
+
           <h2 className="table-title">📝 조리 과정</h2>
           <div className="cooking-process">
             <div className="step">
@@ -149,6 +175,36 @@ const toggleModal = () => {
         </div>
         <div className="step-image">
           <img src="/images/sauce.jpg" alt="Step 2" />
+          </div>
+        </div>
+
+        <div className="step">
+        <div className="step-description">
+          <strong>3. 번데기 물에 넣고 끓이기</strong>
+          <p>번데기를 물에 넣고 한번 더 끓인다.</p>
+        </div>
+        <div className="step-image">
+          <img src="/images/boiling_bun.jpg" alt="Step 3" />
+          </div>
+        </div>
+
+        <div className="step">
+        <div className="step-description">
+          <strong>4. 양념장 넣기 </strong>
+          <p>물이 끓기 시작하면 양녀장을 넣고 자글자글하게 끓여준다.</p>
+        </div>
+        <div className="step-image">
+          <img src="/images/sauce_drop.jpg" alt="Step 4" />
+          </div>
+        </div>
+
+        <div className="step">
+        <div className="step-description">
+          <strong>5. 완성</strong>
+          <p>그릇에 잘 담아 맛있게 먹는다.</p>
+        </div>
+        <div className="step-image">
+          <img src="/images/bundaegi_final.jpg" alt="Step 5" />
           </div>
         </div>
     

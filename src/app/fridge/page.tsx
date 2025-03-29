@@ -7,7 +7,8 @@ const Fridge: React.FC = () => {
   return (
     <div>
       <header aria-label="Main header">
-        <h1>Register Page Layout</h1>
+        <h1>Register Page Layout
+        </h1>
       </header>
 
       <main>

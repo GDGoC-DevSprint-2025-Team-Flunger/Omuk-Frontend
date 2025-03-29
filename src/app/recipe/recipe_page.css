@@ -135,8 +135,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px; /* 모달 너비 조정 */
-    height: 150px; /* 모달 높이 조정 */
+    width: 350px; /* 모달 너비 조정 */
+    height: 350px; /* 모달 높이 조정 */
 
 }
   
@@ -148,6 +148,28 @@
     pointer-events: all; /* 모달 내부만 클릭 가능 */
     border: none;
 }
+
+.modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.modal-table th, .modal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.modal-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modal-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
   
   /* ✅ 팁 스타일 */
 .tip {
@@ -225,7 +247,7 @@
     margin-bottom: 20px; /* 각 항목 사이 간격 */
     border-bottom: 1px solid #ddd; /* 항목 간 구분선 */
     padding-bottom: 20px; /* 하단 패딩 */
-    background-color: #1193aa;
+    background-color: #b4e6ef;
     border-radius: 0.5rem;
     padding: 10px;
     height: 30vh;
@@ -239,6 +261,16 @@
     line-height: 1.5;
     color: #333; /* 글자 색상 */
 }
+
+.step-description strong {
+    display: block; /* 블록 요소로 변경하여 줄바꿈 */
+    margin-bottom: 20px; /* 아래쪽 여백 추가 */
+}
+  
+.step-description p {
+    margin-top: 20px; /* 위쪽 여백 추가 */
+}
+  
 
 /* 이미지 부분 스타일 */
 .step-image img {
