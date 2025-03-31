@@ -1,6 +1,6 @@
 // App.tsx
 'use client';
-import React,{ useState } from "react";
+import React,{ useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import "./recipe_page.css";
@@ -12,10 +12,33 @@ const App: React.FC = () => {
   const [isFavorite, setIsFavorite] = useState(false); //별 노랑/무색 상태
   const [isModalOpen, setIsModalOpen] = useState(false); // 모달 열기/닫기 상태
 
+  const recipe = { 
+    image: "/images/bundaegi.jpeg", 
+    name: "번데기",
+    link: "/recipe" // 즐겨찾기 클릭 시 이동할 페이지
+  };
+
+  // 페이지가 로드될 때 localStorage에서 즐겨찾기 상태 불러오기
+  useEffect(() => {
+    const favorites = JSON.parse(localStorage.getItem("favoriteRecipes") || "[]");
+    setIsFavorite(favorites.some((item: any) => item.name === recipe.name));
+  }, []);
+
   //즐찾 토글함수 추가
   const toggleFavorite = () => {
+    let favorites = JSON.parse(localStorage.getItem("favoriteRecipes") || "[]");
+
+    if (!isFavorite) {
+      favorites.push(recipe); // 즐겨찾기에 추가
+    } else {
+      favorites = favorites.filter((item: any) => item.name !== recipe.name); // 즐겨찾기에서 제거
+    }
+
+    localStorage.setItem("favoriteRecipes", JSON.stringify(favorites));
     setIsFavorite(!isFavorite);
   };
+
+  
 
   // 모달 토글 함수 추가
 const toggleModal = () => {
