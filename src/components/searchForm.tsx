@@ -13,22 +13,22 @@ export default function SearchForm() {
   };
 
   return (
-    <form className="d-flex" role="search" onSubmit={handleSubmit}>
-      <input
-        className="form-control"
-        type="search"
-        placeholder="검색..."
-        value={keyword}
-        onChange={(e) => setKeyword(e.target.value)}
-        aria-label="검색"
-      />
-      <button
-        type="submit"
-        aria-label="검색"
-        className={`${styles.btnCarrot} ms-2 d-flex align-items-center`}
-      >
-        <FaSearch />
-      </button>
-    </form>
+    <form className={styles.searchWrapper} role="search" onSubmit={handleSubmit}>
+  <input
+    className={styles.searchInput}
+    type="search"
+    placeholder="검색"
+    value={keyword}
+    onChange={(e) => setKeyword(e.target.value)}
+    aria-label="검색"
+  />
+  <button
+    type="submit"
+    aria-label="검색"
+    className={styles.searchButton}
+  >
+    <FaSearch size="0.9em" />
+  </button>
+</form>
   );
 }

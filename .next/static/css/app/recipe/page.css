@@ -62,7 +62,7 @@
     width: 50px; /* 버튼 크기 */
     height: 50px; /* 버튼 높이 */
     border-radius: 0.5rem; /* 둥근 모서리 */
-    background-color: #fcfcfc; /* 유튜브 빨간색 */
+    background-color: none; /* 유튜브 빨간색 */
     border: none;
     display: flex;
     justify-content: center;

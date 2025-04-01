@@ -1,16 +1,62 @@
-/* SearchForm.module.css */
+/* 검색창 + 버튼 감싸는 래퍼 */
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* 최대 길이 제한 */
+}
+
+/* 검색 input 스타일: 둥근 회색 테두리 */
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem; /* 오른쪽 공간 확보 */
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background-color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #164430;
+  box-shadow: none;
+}
+
+/* input 안쪽에 들어가는 원형 검색 버튼 */
+.searchButton {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background-color: #EB5353;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #164430;
+}
+
+/* 기존 당근색 버튼 - 다른 곳에서 쓸 경우 대비 */
 .btnCarrot {
-    background-color: #FFA500;
-    color: white;
-    border: 1px solid #FFA500;
-    transition: background-color 0.3s ease;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
-  .btnCarrot:hover {
-    background-color: #e67600; /* hover 시 더 진한 당근색 */
-    border-color: #e67600;
-  }
-  
+  background-color: #EB5353;
+  color: white;
+  border: 1px solid #EB5353;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btnCarrot:hover {
+  background-color: #ffae57;
+  border-color: #ffae57;
+}
