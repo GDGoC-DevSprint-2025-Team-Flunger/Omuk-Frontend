@@ -49,6 +49,7 @@ const toggleModal = () => {
     <div className="App">
       <div className="flex">
         <div className="flex-35 p-4"> 
+        <div className="content-box">
           {/* 음식 이름 */}
           <h2 className="text-2xl font-bold center">번데기</h2>
 
@@ -129,12 +130,14 @@ const toggleModal = () => {
 
         {/*왼쪽 끝*/}
         </div>
+        </div>
         
         
 
 
         {/* ✅ 오른쪽 영역 - 재료 테이블 추가 */}
         <div className="flex-65 bg-green-200 p-4">
+        <div className="right-container">
           <h2 className="table-title">📌 재료 목록</h2>
           <table className="ingredient-table">
             <thead>
@@ -234,6 +237,7 @@ const toggleModal = () => {
           </div> {/*cooking-process 감싸는 div */}
           
 
+        </div>
         </div>
 
 
