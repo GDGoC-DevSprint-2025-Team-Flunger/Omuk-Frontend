@@ -1,0 +1,16 @@
+/* SearchForm.module.css */
+.btnCarrot {
+    background-color: #FFA500;
+    color: white;
+    border: 1px solid #FFA500;
+    transition: background-color 0.3s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .btnCarrot:hover {
+    background-color: #e67600; /* hover 시 더 진한 당근색 */
+    border-color: #e67600;
+  }
+  
