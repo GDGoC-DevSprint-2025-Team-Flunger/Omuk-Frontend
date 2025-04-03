@@ -67,6 +67,83 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "os":
+/*!*********************!*\
+  !*** external "os" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("os");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -75,6 +152,61 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 "use strict";
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -129,23 +261,34 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 
 /***/ }),
 
-/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true!":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true! ***!
-  \******************************************************************************************************/
-/***/ (() => {
+/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/page.tsx */ \"(rsc)/./src/app/page.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkMlM0ElNUMlNUNVc2VycyU1QyU1Q2FyYXNpbm90JTVDJTVDRGVza3RvcCU1QyU1Q2RkZm9vZCU1QyU1Q3NyYyU1QyU1Q2FwcCU1QyU1Q3BhZ2UudHN4JTIyJTJDJTIyaWRzJTIyJTNBJTVCJTVEJTdEJnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSxnSkFBNkYiLCJzb3VyY2VzIjpbIiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkM6XFxcXFVzZXJzXFxcXGFyYXNpbm90XFxcXERlc2t0b3BcXFxcZGRmb29kXFxcXHNyY1xcXFxhcHBcXFxccGFnZS50c3hcIik7XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true!":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true! ***!
-  \******************************************************************************************************/
-/***/ (() => {
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/page.tsx */ \"(ssr)/./src/app/page.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkMlM0ElNUMlNUNVc2VycyU1QyU1Q2FyYXNpbm90JTVDJTVDRGVza3RvcCU1QyU1Q2RkZm9vZCU1QyU1Q3NyYyU1QyU1Q2FwcCU1QyU1Q3BhZ2UudHN4JTIyJTJDJTIyaWRzJTIyJTNBJTVCJTVEJTdEJnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSxnSkFBNkYiLCJzb3VyY2VzIjpbIiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkM6XFxcXFVzZXJzXFxcXGFyYXNpbm90XFxcXERlc2t0b3BcXFxcZGRmb29kXFxcXHNyY1xcXFxhcHBcXFxccGFnZS50c3hcIik7XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5Carasinot%5C%5CDesktop%5C%5Cddfood%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
 
+/***/ }),
+
+/***/ "(ssr)/./src/app/page.tsx":
+/*!**************************!*\
+  !*** ./src/app/page.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\nconst Mainpage = ()=>{\n    const [recipe1, setRecipe1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [recipe2, setRecipe2] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [loading1, setLoading1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);\n    const [loading2, setLoading2] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);\n    const [error1, setError1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [error2, setError2] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)({\n        \"Mainpage.useEffect\": ()=>{\n            const fetchRecipe1 = {\n                \"Mainpage.useEffect.fetchRecipe1\": async ()=>{\n                    setLoading1(true);\n                    try {\n                        const res = await axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get('http://3.38.114.206:8080/recipe/recommendation/random');\n                        setRecipe1(res.data);\n                        setError1('');\n                    } catch (err) {\n                        setError1('레시피 1 불러오기 실패');\n                    } finally{\n                        setLoading1(false);\n                    }\n                }\n            }[\"Mainpage.useEffect.fetchRecipe1\"];\n            const fetchRecipe2 = {\n                \"Mainpage.useEffect.fetchRecipe2\": async ()=>{\n                    setLoading2(true);\n                    try {\n                        const res = await axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get('http://3.38.114.206:8080/recipe/recommendation/random');\n                        setRecipe2(res.data);\n                        setError2('');\n                    } catch (err) {\n                        setError2('레시피 2 불러오기 실패');\n                    } finally{\n                        setLoading2(false);\n                    }\n                }\n            }[\"Mainpage.useEffect.fetchRecipe2\"];\n            fetchRecipe1();\n            fetchRecipe2();\n        }\n    }[\"Mainpage.useEffect\"], []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"container py-5\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"header\", {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                lineNumber: 51,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"row gy-4\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"col-12\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                        children: \"오늘의 인기 레시피\"\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 59,\n                                        columnNumber: 15\n                                    }, undefined),\n                                    loading1 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"border rounded p-4 text-center text-muted\",\n                                        children: \"불러오는 중...\"\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 61,\n                                        columnNumber: 17\n                                    }, undefined) : error1 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"alert alert-danger\",\n                                        children: error1\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 63,\n                                        columnNumber: 17\n                                    }, undefined) : recipe1 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"card\",\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            className: \"card-body\",\n                                            children: [\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                    className: \"card-title\",\n                                                    children: recipe1.name\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                                    lineNumber: 67,\n                                                    columnNumber: 21\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                                    className: \"card-text\",\n                                                    children: [\n                                                        \"필요한 재료: \",\n                                                        recipe1.ingredients.join(', ')\n                                                    ]\n                                                }, void 0, true, {\n                                                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                                    lineNumber: 68,\n                                                    columnNumber: 21\n                                                }, undefined)\n                                            ]\n                                        }, void 0, true, {\n                                            fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                            lineNumber: 66,\n                                            columnNumber: 19\n                                        }, undefined)\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 65,\n                                        columnNumber: 17\n                                    }, undefined) : null\n                                ]\n                            }, void 0, true, {\n                                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                lineNumber: 58,\n                                columnNumber: 13\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"col-12\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                        children: \"이런 레시피는 어떠세요?\"\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 78,\n                                        columnNumber: 15\n                                    }, undefined),\n                                    loading2 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"border rounded p-4 text-center text-muted\",\n                                        children: \"불러오는 중...\"\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 80,\n                                        columnNumber: 17\n                                    }, undefined) : error2 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"alert alert-danger\",\n                                        children: error2\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 82,\n                                        columnNumber: 17\n                                    }, undefined) : recipe2 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \"card\",\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            className: \"card-body\",\n                                            children: [\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                    className: \"card-title\",\n                                                    children: recipe2.name\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                                    lineNumber: 86,\n                                                    columnNumber: 21\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                                    className: \"card-text\",\n                                                    children: [\n                                                        \"필요한 재료: \",\n                                                        recipe2.ingredients.join(', ')\n                                                    ]\n                                                }, void 0, true, {\n                                                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                                    lineNumber: 87,\n                                                    columnNumber: 21\n                                                }, undefined)\n                                            ]\n                                        }, void 0, true, {\n                                            fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                            lineNumber: 85,\n                                            columnNumber: 19\n                                        }, undefined)\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                        lineNumber: 84,\n                                        columnNumber: 17\n                                    }, undefined) : null\n                                ]\n                            }, void 0, true, {\n                                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                                lineNumber: 77,\n                                columnNumber: 13\n                            }, undefined)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                        lineNumber: 56,\n                        columnNumber: 11\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                    lineNumber: 55,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                lineNumber: 54,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n        lineNumber: 50,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Mainpage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFDbUQ7QUFDekI7QUFPMUIsTUFBTUksV0FBcUI7SUFDekIsTUFBTSxDQUFDQyxTQUFTQyxXQUFXLEdBQUdKLCtDQUFRQSxDQUFnQjtJQUN0RCxNQUFNLENBQUNLLFNBQVNDLFdBQVcsR0FBR04sK0NBQVFBLENBQWdCO0lBQ3RELE1BQU0sQ0FBQ08sVUFBVUMsWUFBWSxHQUFHUiwrQ0FBUUEsQ0FBQztJQUN6QyxNQUFNLENBQUNTLFVBQVVDLFlBQVksR0FBR1YsK0NBQVFBLENBQUM7SUFDekMsTUFBTSxDQUFDVyxRQUFRQyxVQUFVLEdBQUdaLCtDQUFRQSxDQUFDO0lBQ3JDLE1BQU0sQ0FBQ2EsUUFBUUMsVUFBVSxHQUFHZCwrQ0FBUUEsQ0FBQztJQUVyQ0QsZ0RBQVNBOzhCQUFDO1lBQ1IsTUFBTWdCO21EQUFlO29CQUNuQlAsWUFBWTtvQkFDWixJQUFJO3dCQUNGLE1BQU1RLE1BQU0sTUFBTWYsNkNBQUtBLENBQUNnQixHQUFHLENBQUM7d0JBQzVCYixXQUFXWSxJQUFJRSxJQUFJO3dCQUNuQk4sVUFBVTtvQkFDWixFQUFFLE9BQU9PLEtBQUs7d0JBQ1pQLFVBQVU7b0JBQ1osU0FBVTt3QkFDUkosWUFBWTtvQkFDZDtnQkFDRjs7WUFFQSxNQUFNWTttREFBZTtvQkFDbkJWLFlBQVk7b0JBQ1osSUFBSTt3QkFDRixNQUFNTSxNQUFNLE1BQU1mLDZDQUFLQSxDQUFDZ0IsR0FBRyxDQUFDO3dCQUM1QlgsV0FBV1UsSUFBSUUsSUFBSTt3QkFDbkJKLFVBQVU7b0JBQ1osRUFBRSxPQUFPSyxLQUFLO3dCQUNaTCxVQUFVO29CQUNaLFNBQVU7d0JBQ1JKLFlBQVk7b0JBQ2Q7Z0JBQ0Y7O1lBRUFLO1lBQ0FLO1FBQ0Y7NkJBQUcsRUFBRTtJQUVMLHFCQUNFLDhEQUFDQztRQUFJQyxXQUFVOzswQkFDYiw4REFBQ0M7Ozs7OzBCQUdELDhEQUFDQzswQkFDQyw0RUFBQ0M7OEJBQ0MsNEVBQUNKO3dCQUFJQyxXQUFVOzswQ0FFYiw4REFBQ0Q7Z0NBQUlDLFdBQVU7O2tEQUNiLDhEQUFDSTtrREFBRzs7Ozs7O29DQUNIbkIseUJBQ0MsOERBQUNjO3dDQUFJQyxXQUFVO2tEQUE0Qzs7Ozs7b0RBQ3pEWCx1QkFDRiw4REFBQ1U7d0NBQUlDLFdBQVU7a0RBQXNCWDs7Ozs7b0RBQ25DUix3QkFDRiw4REFBQ2tCO3dDQUFJQyxXQUFVO2tEQUNiLDRFQUFDRDs0Q0FBSUMsV0FBVTs7OERBQ2IsOERBQUNJO29EQUFHSixXQUFVOzhEQUFjbkIsUUFBUXdCLElBQUk7Ozs7Ozs4REFDeEMsOERBQUNDO29EQUFFTixXQUFVOzt3REFBWTt3REFDZG5CLFFBQVEwQixXQUFXLENBQUNDLElBQUksQ0FBQzs7Ozs7Ozs7Ozs7Ozs7Ozs7b0RBSXRDOzs7Ozs7OzBDQUlOLDhEQUFDVDtnQ0FBSUMsV0FBVTs7a0RBQ2IsOERBQUNJO2tEQUFHOzs7Ozs7b0NBQ0hqQix5QkFDQyw4REFBQ1k7d0NBQUlDLFdBQVU7a0RBQTRDOzs7OztvREFDekRULHVCQUNGLDhEQUFDUTt3Q0FBSUMsV0FBVTtrREFBc0JUOzs7OztvREFDbkNSLHdCQUNGLDhEQUFDZ0I7d0NBQUlDLFdBQVU7a0RBQ2IsNEVBQUNEOzRDQUFJQyxXQUFVOzs4REFDYiw4REFBQ0k7b0RBQUdKLFdBQVU7OERBQWNqQixRQUFRc0IsSUFBSTs7Ozs7OzhEQUN4Qyw4REFBQ0M7b0RBQUVOLFdBQVU7O3dEQUFZO3dEQUNkakIsUUFBUXdCLFdBQVcsQ0FBQ0MsSUFBSSxDQUFDOzs7Ozs7Ozs7Ozs7Ozs7OztvREFJdEM7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBT2xCO0FBRUEsaUVBQWU1QixRQUFRQSxFQUFDIiwic291cmNlcyI6WyJDOlxcVXNlcnNcXGFyYXNpbm90XFxEZXNrdG9wXFxkZGZvb2RcXHNyY1xcYXBwXFxwYWdlLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCc7XHJcbmltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5cclxuaW50ZXJmYWNlIFJlY2lwZSB7XHJcbiAgbmFtZTogc3RyaW5nO1xyXG4gIGluZ3JlZGllbnRzOiBzdHJpbmdbXTtcclxufVxyXG5cclxuY29uc3QgTWFpbnBhZ2U6IFJlYWN0LkZDID0gKCkgPT4ge1xyXG4gIGNvbnN0IFtyZWNpcGUxLCBzZXRSZWNpcGUxXSA9IHVzZVN0YXRlPFJlY2lwZSB8IG51bGw+KG51bGwpO1xyXG4gIGNvbnN0IFtyZWNpcGUyLCBzZXRSZWNpcGUyXSA9IHVzZVN0YXRlPFJlY2lwZSB8IG51bGw+KG51bGwpO1xyXG4gIGNvbnN0IFtsb2FkaW5nMSwgc2V0TG9hZGluZzFdID0gdXNlU3RhdGUodHJ1ZSk7XHJcbiAgY29uc3QgW2xvYWRpbmcyLCBzZXRMb2FkaW5nMl0gPSB1c2VTdGF0ZSh0cnVlKTtcclxuICBjb25zdCBbZXJyb3IxLCBzZXRFcnJvcjFdID0gdXNlU3RhdGUoJycpO1xyXG4gIGNvbnN0IFtlcnJvcjIsIHNldEVycm9yMl0gPSB1c2VTdGF0ZSgnJyk7XHJcblxyXG4gIHVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICBjb25zdCBmZXRjaFJlY2lwZTEgPSBhc3luYyAoKSA9PiB7XHJcbiAgICAgIHNldExvYWRpbmcxKHRydWUpO1xyXG4gICAgICB0cnkge1xyXG4gICAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGF4aW9zLmdldCgnaHR0cDovLzMuMzguMTE0LjIwNjo4MDgwL3JlY2lwZS9yZWNvbW1lbmRhdGlvbi9yYW5kb20nKTtcclxuICAgICAgICBzZXRSZWNpcGUxKHJlcy5kYXRhKTtcclxuICAgICAgICBzZXRFcnJvcjEoJycpO1xyXG4gICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICBzZXRFcnJvcjEoJ+ugiOyLnO2UvCAxIOu2iOufrOyYpOq4sCDsi6TtjKgnKTtcclxuICAgICAgfSBmaW5hbGx5IHtcclxuICAgICAgICBzZXRMb2FkaW5nMShmYWxzZSk7XHJcbiAgICAgIH1cclxuICAgIH07XHJcblxyXG4gICAgY29uc3QgZmV0Y2hSZWNpcGUyID0gYXN5bmMgKCkgPT4ge1xyXG4gICAgICBzZXRMb2FkaW5nMih0cnVlKTtcclxuICAgICAgdHJ5IHtcclxuICAgICAgICBjb25zdCByZXMgPSBhd2FpdCBheGlvcy5nZXQoJ2h0dHA6Ly8zLjM4LjExNC4yMDY6ODA4MC9yZWNpcGUvcmVjb21tZW5kYXRpb24vcmFuZG9tJyk7XHJcbiAgICAgICAgc2V0UmVjaXBlMihyZXMuZGF0YSk7XHJcbiAgICAgICAgc2V0RXJyb3IyKCcnKTtcclxuICAgICAgfSBjYXRjaCAoZXJyKSB7XHJcbiAgICAgICAgc2V0RXJyb3IyKCfroIjsi5ztlLwgMiDrtojrn6zsmKTquLAg7Iuk7YyoJyk7XHJcbiAgICAgIH0gZmluYWxseSB7XHJcbiAgICAgICAgc2V0TG9hZGluZzIoZmFsc2UpO1xyXG4gICAgICB9XHJcbiAgICB9O1xyXG5cclxuICAgIGZldGNoUmVjaXBlMSgpO1xyXG4gICAgZmV0Y2hSZWNpcGUyKCk7XHJcbiAgfSwgW10pO1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgcHktNVwiPlxyXG4gICAgICA8aGVhZGVyPlxyXG4gICAgICA8L2hlYWRlcj5cclxuXHJcbiAgICAgIDxtYWluPlxyXG4gICAgICAgIDxzZWN0aW9uPlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3cgZ3ktNFwiPlxyXG4gICAgICAgICAgICB7Lyog66CI7Iuc7ZS8IDEgKi99XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sLTEyXCI+XHJcbiAgICAgICAgICAgICAgPGg1PuyYpOuKmOydmCDsnbjquLAg66CI7Iuc7ZS8PC9oNT5cclxuICAgICAgICAgICAgICB7bG9hZGluZzEgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJvcmRlciByb3VuZGVkIHAtNCB0ZXh0LWNlbnRlciB0ZXh0LW11dGVkXCI+67aI65+s7Jik64qUIOykkS4uLjwvZGl2PlxyXG4gICAgICAgICAgICAgICkgOiBlcnJvcjEgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFsZXJ0IGFsZXJ0LWRhbmdlclwiPntlcnJvcjF9PC9kaXY+XHJcbiAgICAgICAgICAgICAgKSA6IHJlY2lwZTEgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhcmRcIj5cclxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkLWJvZHlcIj5cclxuICAgICAgICAgICAgICAgICAgICA8aDUgY2xhc3NOYW1lPVwiY2FyZC10aXRsZVwiPntyZWNpcGUxLm5hbWV9PC9oNT5cclxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjYXJkLXRleHRcIj5cclxuICAgICAgICAgICAgICAgICAgICAgIO2VhOyalO2VnCDsnqzro4w6IHtyZWNpcGUxLmluZ3JlZGllbnRzLmpvaW4oJywgJyl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICkgOiBudWxsfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuXHJcbiAgICAgICAgICAgIHsvKiDroIjsi5ztlLwgMiAqL31cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2wtMTJcIj5cclxuICAgICAgICAgICAgICA8aDU+7J2065+wIOugiOyLnO2UvOuKlCDslrTrlqDshLjsmpQ/PC9oNT5cclxuICAgICAgICAgICAgICB7bG9hZGluZzIgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJvcmRlciByb3VuZGVkIHAtNCB0ZXh0LWNlbnRlciB0ZXh0LW11dGVkXCI+67aI65+s7Jik64qUIOykkS4uLjwvZGl2PlxyXG4gICAgICAgICAgICAgICkgOiBlcnJvcjIgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFsZXJ0IGFsZXJ0LWRhbmdlclwiPntlcnJvcjJ9PC9kaXY+XHJcbiAgICAgICAgICAgICAgKSA6IHJlY2lwZTIgPyAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhcmRcIj5cclxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkLWJvZHlcIj5cclxuICAgICAgICAgICAgICAgICAgICA8aDUgY2xhc3NOYW1lPVwiY2FyZC10aXRsZVwiPntyZWNpcGUyLm5hbWV9PC9oNT5cclxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjYXJkLXRleHRcIj5cclxuICAgICAgICAgICAgICAgICAgICAgIO2VhOyalO2VnCDsnqzro4w6IHtyZWNpcGUyLmluZ3JlZGllbnRzLmpvaW4oJywgJyl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICkgOiBudWxsfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvc2VjdGlvbj5cclxuICAgICAgPC9tYWluPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IE1haW5wYWdlO1xyXG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsImF4aW9zIiwiTWFpbnBhZ2UiLCJyZWNpcGUxIiwic2V0UmVjaXBlMSIsInJlY2lwZTIiLCJzZXRSZWNpcGUyIiwibG9hZGluZzEiLCJzZXRMb2FkaW5nMSIsImxvYWRpbmcyIiwic2V0TG9hZGluZzIiLCJlcnJvcjEiLCJzZXRFcnJvcjEiLCJlcnJvcjIiLCJzZXRFcnJvcjIiLCJmZXRjaFJlY2lwZTEiLCJyZXMiLCJnZXQiLCJkYXRhIiwiZXJyIiwiZmV0Y2hSZWNpcGUyIiwiZGl2IiwiY2xhc3NOYW1lIiwiaGVhZGVyIiwibWFpbiIsInNlY3Rpb24iLCJoNSIsIm5hbWUiLCJwIiwiaW5ncmVkaWVudHMiLCJqb2luIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/page.tsx\n");
 
 /***/ }),
 
@@ -199,7 +342,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n//메인홈//\nconst Mainpage = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"header\", {\n                \"aria-label\": \"Main header\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: \"hello\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                    lineNumber: 8,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                lineNumber: 7,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n                lineNumber: 12,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\",\n        lineNumber: 6,\n        columnNumber: 1\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Mainpage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUEwQjtBQUUxQixPQUFPO0FBQ1AsTUFBTUMsV0FBcUI7SUFDekIscUJBQ0YsOERBQUNDOzswQkFDSyw4REFBQ0M7Z0JBQU9DLGNBQVc7MEJBQ2pCLDRFQUFDQzs4QkFBRzs7Ozs7Ozs7Ozs7MEJBSU4sOERBQUNDOzs7Ozs7Ozs7OztBQU9QO0FBRUEsaUVBQWVMLFFBQVFBLEVBQUMiLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcYXJhc2lub3RcXERlc2t0b3BcXGRkZm9vZFxcc3JjXFxhcHBcXHBhZ2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG4vL+uplOyduO2ZiC8vXHJcbmNvbnN0IE1haW5wYWdlOiBSZWFjdC5GQyA9ICgpID0+IHtcclxuICByZXR1cm4gKFxyXG48ZGl2PlxyXG4gICAgICA8aGVhZGVyIGFyaWEtbGFiZWw9XCJNYWluIGhlYWRlclwiPlxyXG4gICAgICAgIDxoMT5oZWxsb1xyXG4gICAgICAgIDwvaDE+XHJcbiAgICAgIDwvaGVhZGVyPlxyXG5cclxuICAgICAgPG1haW4+XHJcblxyXG4gICAgICA8L21haW4+XHJcblxyXG5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBNYWlucGFnZTtcclxuIl0sIm5hbWVzIjpbIlJlYWN0IiwiTWFpbnBhZ2UiLCJkaXYiLCJoZWFkZXIiLCJhcmlhLWxhYmVsIiwiaDEiLCJtYWluIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/app/page.tsx\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-server-dom-webpack/server.edge */ "(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-webpack-server-edge.js");
+/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__.registerClientReference)(
+function() { throw new Error("Attempted to call the default export of \"C:\\\\Users\\\\arasinot\\\\Desktop\\\\ddfood\\\\src\\\\app\\\\page.tsx\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component."); },
+"C:\\Users\\arasinot\\Desktop\\ddfood\\src\\app\\page.tsx",
+"default",
+));
+
 
 /***/ }),
 
@@ -256,7 +411,7 @@ function() { throw new Error("Attempted to call the default export of \"C:\\\\Us
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/react-icons","vendor-chunks/bootstrap"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=C%3A%5CUsers%5Carasinot%5CDesktop%5Cddfood%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Carasinot%5CDesktop%5Cddfood&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/react-icons","vendor-chunks/@swc","vendor-chunks/bootstrap","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/get-intrinsic","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/supports-color","vendor-chunks/has-symbols","vendor-chunks/delayed-stream","vendor-chunks/function-bind","vendor-chunks/es-set-tostringtag","vendor-chunks/get-proto","vendor-chunks/call-bind-apply-helpers","vendor-chunks/dunder-proto","vendor-chunks/math-intrinsics","vendor-chunks/es-errors","vendor-chunks/has-flag","vendor-chunks/gopd","vendor-chunks/es-define-property","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/es-object-atoms"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=C%3A%5CUsers%5Carasinot%5CDesktop%5Cddfood%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Carasinot%5CDesktop%5Cddfood&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
