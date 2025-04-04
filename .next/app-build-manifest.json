@@ -17,21 +17,16 @@
       "static/css/app/mypage/page.css",
       "static/chunks/app/mypage/page.js"
     ],
-    "/refrigerator/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/refrigerator/page.js"
-    ],
     "/recipe/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/recipe/[id]/page.css",
       "static/chunks/app/recipe/[id]/page.js"
     ],
-    "/_not-found/page": [
+    "/refrigerator/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/refrigerator/page.js"
     ]
   }
 }

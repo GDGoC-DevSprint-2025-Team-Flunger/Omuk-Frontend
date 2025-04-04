@@ -1,4 +1,4 @@
-// File: C:\Users\arasinot\Desktop\ddfood\src\app\refrigerator\page.tsx
+// File: C:\Users\gitue\Desktop\testtt\Omuk-Frontend_t\src\app\refrigerator\page.tsx
 import * as entry from '../../../../src/app/refrigerator/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
