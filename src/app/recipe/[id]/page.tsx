@@ -9,6 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 import "./recipe_page.css";
 
 interface Recipe {
+  recipeId: number;
   title: string;
   imageUrl: string;
   cookTime: number;
@@ -35,9 +36,11 @@ const RecipeDetail: React.FC = () => {
   } | null>(null);
   const [isFavorite, setIsFavorite] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [recentRecipes, setRecentRecipes] = useState([]);
 
   // 레시피 불러오기
   useEffect(() => {
+
     const fetchRecipe = async () => {
       try {
         const res = await axios.get(`http://3.38.114.206:8080/recipe/${recipeId}`);
@@ -81,6 +84,22 @@ const RecipeDetail: React.FC = () => {
     }
   }, [recipeId]);
 
+
+  useEffect(() => {
+    if (recipe) {
+      const stored = JSON.parse(localStorage.getItem("recentRecipes") || "[]");
+  
+      // 이미 있는 레시피는 제거 (중복 제거)
+      const filtered = stored.filter((item: any) => item.id !== recipe.recipeId);
+  
+      // 최근 본 레시피를 앞에 추가
+      const updated = [{ id: recipe.recipeId, image: recipe.imageUrl, name: recipe.title, link: `/recipe/${recipe.recipeId}` }, ...filtered];
+  
+      // 최대 20개까지만 저장
+      localStorage.setItem("recentRecipes", JSON.stringify(updated.slice(0, 20)));
+    }
+  }, [recipe]);
+  
   // 즐겨찾기 추가
   const addFavorite = async () => {
     if (isFavorite) return;
