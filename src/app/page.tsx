@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/navigation'; // ✅ useNavigate 대신
 
 interface Recipe {
   id: number;
@@ -12,6 +13,11 @@ const Mainpage: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  const router = useRouter(); // ✅ Next.js 전용 라우터
+  const handleCardClick = (recipeId: number) => {
+    router.push(`/recipe/${recipeId}`); // ✅ useRouter로 경로 이동
+  };
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -43,9 +49,12 @@ const Mainpage: React.FC = () => {
         <div className="row gy-4">
           {recipes.map((recipe) => (
             <div className="col-md-3 col-sm-6" key={recipe.id}>
-              <div className="card position-relative text-white">
+              <div className="card position-relative text-white"
+                onClick={() => handleCardClick(recipe.id)}
+                style={{ cursor: 'pointer' }}>
                 <img
                   src={recipe.imageUrl}
+
                   className="card-img"
                   alt={recipe.title}
                   style={{ height: '200px', objectFit: 'cover' }} // ✅ 이미지 정렬
