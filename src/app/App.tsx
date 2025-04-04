@@ -1,11 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './page';
+import Fridge from './refrigerator/page';
+import Recipedetail from './recipe/[id]/page';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* 냉장고 페이지 (홈) */}
+        <Route path="/" element={<Fridge />} />
+        
+        {/* 레시피 상세 페이지 */}
+        <Route path="/recipe/:id" element={<Recipedetail />} />
       </Routes>
     </BrowserRouter>
   );

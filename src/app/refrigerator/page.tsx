@@ -1,7 +1,9 @@
 'use client';
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import IngredientCard from '../../components/ingredientCardForm';
+import { useRouter } from 'next/navigation'; // ✅ useNavigate 대신
 
 interface Ingredient {
   name: string;
@@ -10,16 +12,20 @@ interface Ingredient {
 }
 
 interface Recipe {
-  name: string;
+  id: number;
+  title: string;
   ingredients: string[];
+  imageUrl: string;
 }
 
 const Fridge: React.FC = () => {
   const [perfectMatches, setPerfectMatches] = useState<Recipe[]>([]);
   const [partialMatches, setPartialMatches] = useState<Recipe[]>([]);
-  const [randomFallback, setRandomFallback] = useState<Recipe | null>(null);
+  const [randomFallback, setRandomFallback] = useState<Recipe[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+
+  const router = useRouter(); // ✅ Next.js 전용 라우터
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -38,13 +44,11 @@ const Fridge: React.FC = () => {
         const partial: Recipe[] = [];
 
         for (const recipe of recipes) {
-          const ingredients = recipe.ingredients;
-          const hasAll = ingredients.every(ing => userIngredients.includes(ing));
-          const hasSome = ingredients.some(ing => userIngredients.includes(ing));
+          const titleMatches = userIngredients.some((ing) =>
+            recipe.title.toLowerCase().includes(ing.toLowerCase())
+          );
 
-          if (hasAll) {
-            perfect.push(recipe);
-          } else if (hasSome) {
+          if (titleMatches) {
             partial.push(recipe);
           }
         }
@@ -68,6 +72,10 @@ const Fridge: React.FC = () => {
     fetchRecipes();
   }, []);
 
+  const handleCardClick = (recipeId: number) => {
+    router.push(`/recipe/${recipeId}`); // ✅ useRouter로 경로 이동
+  };
+
   return (
     <div className="container py-5">
       <div className="row g-4">
@@ -90,41 +98,83 @@ const Fridge: React.FC = () => {
           <>
             {perfectMatches.length > 0 && (
               <>
-                <h5>✅ 지금 바로 만들 수 있어요!</h5>
-                <ul className="list-group mb-4">
-                  {perfectMatches.map((r, i) => (
-                    <li key={i} className="list-group-item">
-                      <strong>{r.name}</strong>
-                      <br />
-                      <small className="text-muted">재료: {r.ingredients.join(', ')}</small>
-                    </li>
+                <h5>지금 바로 만들 수 있어요!</h5>
+                <div className="row gy-4 mb-4">
+                  {perfectMatches.map((recipe) => (
+                    <div className="col-md-3 col-sm-6" key={recipe.id}>
+                      <div
+                        className="card position-relative text-white"
+                        onClick={() => handleCardClick(recipe.id)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        <img
+                          src={recipe.imageUrl}
+                          className="card-img"
+                          alt={recipe.title}
+                          style={{ height: '200px', objectFit: 'cover' }}
+                        />
+                        <div className="card-img-overlay d-flex align-items-end p-2" style={{ background: 'rgba(0,0,0,0.3)' }}>
+                          <h6 className="card-title mb-0">{recipe.title}</h6>
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </>
             )}
 
             {partialMatches.length > 0 && (
               <>
-                <h5>🔍 일부 재료가 있어요!</h5>
-                <ul className="list-group">
-                  {partialMatches.map((r, i) => (
-                    <li key={i} className="list-group-item">
-                      <strong>{r.name}</strong>
-                      <br />
-                      <small className="text-muted">필요 재료: {r.ingredients.join(', ')}</small>
-                    </li>
+                <h5>일부 재료가 있어요!</h5>
+                <div className="row gy-4">
+                  {partialMatches.map((recipe) => (
+                    <div className="col-md-3 col-sm-6" key={recipe.id}>
+                      <div
+                        className="card position-relative text-white"
+                        onClick={() => handleCardClick(recipe.id)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        <img
+                          src={recipe.imageUrl}
+                          className="card-img"
+                          alt={recipe.title}
+                          style={{ height: '200px', objectFit: 'cover' }}
+                        />
+                        <div className="card-img-overlay d-flex align-items-end p-2" style={{ background: 'rgba(0,0,0,0.3)' }}>
+                          <h6 className="card-title mb-0">{recipe.title}</h6>
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </>
             )}
           </>
-        ) : randomFallback ? (
-          <div className="alert alert-warning">
-            <p>냉장고로 추천가능한 레시피가 없어요. 대신 이런 레시피는 어떠실까요?</p>
-            <strong>{randomFallback.name}</strong>
-            <br />
-            <small className="text-muted">재료: {randomFallback.ingredients.join(', ')}</small>
-          </div>
+        ) : randomFallback.length > 0 ? (
+          <>
+            <h6>냉장고로 추천 가능한 레시피가 없어요. 대신 이런 레시피는 어떠실까요?</h6>
+            <div className="row gy-4">
+              {randomFallback.map((recipe) => (
+                <div className="col-md-3 col-sm-6" key={recipe.id}>
+                  <div
+                    className="card position-relative text-white"
+                    onClick={() => handleCardClick(recipe.id)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <img
+                      src={recipe.imageUrl}
+                      className="card-img"
+                      alt={recipe.title}
+                      style={{ height: '200px', objectFit: 'cover' }}
+                    />
+                    <div className="card-img-overlay d-flex align-items-end p-2" style={{ background: 'rgba(0,0,0,0.3)' }}>
+                      <h6 className="card-title mb-0">{recipe.title}</h6>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
         ) : (
           <p className="text-muted">추천할 레시피가 없습니다.</p>
         )}
